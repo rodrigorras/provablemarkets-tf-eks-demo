@@ -1,4 +1,6 @@
-# Simple EKS Cluster
+# provablemarkets-tf-eks-demo
+
+## Simple EKS Cluster
 
 A minimal Terraform configuration for an EKS cluster in EU (Frankfurt).
 
@@ -9,6 +11,12 @@ A minimal Terraform configuration for an EKS cluster in EU (Frankfurt).
 - Public subnets only (no NAT gateway costs)
 
 ## Usage
+
+0. **Configure S3 Bucket**
+
+ ```bash
+ ./configure_bucket.sh
+   ```
 
 1. **Deploy**:
    ```bash
