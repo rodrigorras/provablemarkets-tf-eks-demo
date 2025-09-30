@@ -37,12 +37,12 @@ resource "aws_eks_node_group" "main" {
   subnet_ids      = aws_subnet.public[*].id
 
   instance_types = ["t3.medium" ]  #"t3.small"]  # Multiple options for availability
-  capacity_type = "SPOT"
+  capacity_type = "ON_DEMAND"
 
   scaling_config {
-    desired_size = 2
-    max_size     = 3
-    min_size     = 2
+    desired_size = 1
+    max_size     = 2
+    min_size     = 1
   }
 
   depends_on = [
