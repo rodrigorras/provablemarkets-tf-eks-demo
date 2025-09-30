@@ -7,7 +7,7 @@ A minimal Terraform configuration for an EKS cluster in EU (Frankfurt).
 ## What you get
 
 - EKS cluster in `eu-central-1`
-- 1 t3.medium SPOT/ON_DEMAND instance (cheapest option)
+- 1 t3.medium SPOT/ON_DEMAND instance 
 - Public subnets only (no NAT gateway costs)
 
 ## Usage
