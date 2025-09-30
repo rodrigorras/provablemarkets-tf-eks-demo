@@ -36,7 +36,7 @@ resource "aws_eks_node_group" "main" {
   node_role_arn   = aws_iam_role.nodes.arn
   subnet_ids      = aws_subnet.public[*].id
 
-  instance_types = ["t3.medium", "t3.small", "m5.large"]  # Multiple options for availability
+  instance_types = ["t3.medium"]  # Multiple options for availability
   capacity_type = "SPOT"
 
   scaling_config {
