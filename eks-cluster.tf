@@ -30,7 +30,7 @@ resource "aws_eks_cluster" "main" {
 
   # Enable cluster access for your IAM user/role
   access_config {
-    authentication_mode = "API_AND_CONFIG_MAP"
+    authentication_mode                         = "API_AND_CONFIG_MAP"
     bootstrap_cluster_creator_admin_permissions = true
   }
 
